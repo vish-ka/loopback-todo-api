@@ -5,7 +5,8 @@
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "Todo": 2
+    "Todo": 6,
+    "Author": 4
   },
   "models": {
     "User": {},
@@ -14,7 +15,16 @@
     "RoleMapping": {},
     "Role": {},
     "Todo": {
-      "1": "{\"title\":\"Write some code\",\"completed\":false,\"id\":1}"
+      "1": "{\"title\":\"Write some code\",\"completed\":false,\"authorId\":1,\"id\":1}",
+      "2": "{\"title\":\"Click to remove\",\"completed\":false,\"authorId\":1,\"id\":2}",
+      "3": "{\"title\":\"Buy some milk\",\"completed\":false,\"authorId\":2,\"id\":3}",
+      "4": "{\"title\":\"Buy some coffee\",\"completed\":false,\"authorId\":2,\"id\":4}",
+      "5": "{\"title\":\"Code more\",\"completed\":false,\"authorId\":1,\"id\":5}"
+    },
+    "Author": {
+      "1": "{\"name\":\"Kate\",\"id\":1}",
+      "2": "{\"name\":\"Will\",\"id\":2}",
+      "3": "{\"name\":\"Mike\",\"id\":3}"
     }
   }
 }

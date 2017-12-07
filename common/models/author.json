@@ -1,29 +1,21 @@
 {
-  "name": "Todo",
+  "name": "Author",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "title": {
+    "name": {
       "type": "string",
-      "required": true
-    },
-    "completed": {
-      "type": "boolean",
-      "required": true
-    },
-    "authorId": {
-      "type": "number",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "author": {
-      "type": "belongsTo",
-      "model": "Author",
+    "todo": {
+      "type": "hasMany",
+      "model": "Todo",
       "foreignKey": "authorId"
     }
   },
