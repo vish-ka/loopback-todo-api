@@ -1,7 +1,7 @@
 {
   "ids": {
-    "User": 1,
-    "AccessToken": 1,
+    "User": 2,
+    "AccessToken": 3,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
@@ -9,8 +9,13 @@
     "Author": 4
   },
   "models": {
-    "User": {},
-    "AccessToken": {},
+    "User": {
+      "1": "{\"password\":\"$2a$10$V8m.0NFj2bflHSw1Fj8dcelsfWWg4nJhW1EjIE5bqoKMFZy8q3bbi\",\"email\":\"admin@example.com\",\"id\":1}"
+    },
+    "AccessToken": {
+      "slFunw7tTHPNbvYNWtCET3NtfuroE1FLlmqMnSWefeeci93n52n3FZVUeyxQ9OJM": "{\"id\":\"slFunw7tTHPNbvYNWtCET3NtfuroE1FLlmqMnSWefeeci93n52n3FZVUeyxQ9OJM\",\"ttl\":1209600,\"created\":\"2017-12-08T09:21:13.766Z\",\"userId\":1}",
+      "s3cr3t": "{\"id\":\"s3cr3t\",\"userId\":1}"
+    },
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
