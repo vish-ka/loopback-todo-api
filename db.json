@@ -5,8 +5,8 @@
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "Todo": 6,
-    "Author": 4
+    "Todo": 9,
+    "Author": 5
   },
   "models": {
     "User": {
@@ -24,12 +24,16 @@
       "2": "{\"title\":\"Click to remove\",\"completed\":false,\"authorId\":1,\"id\":2}",
       "3": "{\"title\":\"Buy some milk\",\"completed\":false,\"authorId\":2,\"id\":3}",
       "4": "{\"title\":\"Buy some coffee\",\"completed\":false,\"authorId\":2,\"id\":4}",
-      "5": "{\"title\":\"Code more\",\"completed\":false,\"authorId\":1,\"id\":5}"
+      "5": "{\"title\":\"Code more\",\"completed\":false,\"authorId\":1,\"id\":5}",
+      "6": "{\"title\":\"Author-Todo\",\"completed\":false,\"authorId\":4,\"id\":6}",
+      "7": "{\"title\":\"poiuy\",\"completed\":false,\"authorId\":1,\"id\":7}",
+      "8": "{\"title\":\"all good\",\"completed\":false,\"authorId\":1,\"id\":8}"
     },
     "Author": {
       "1": "{\"name\":\"Kate\",\"id\":1}",
       "2": "{\"name\":\"Will\",\"id\":2}",
-      "3": "{\"name\":\"Mike\",\"id\":3}"
+      "3": "{\"name\":\"Mike\",\"id\":3}",
+      "4": "{\"name\":\"my Author\",\"id\":4}"
     }
   }
 }

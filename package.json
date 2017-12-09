@@ -1,7 +1,17 @@
 {
-  "name": "loopback-api",
+  "name": "loopback-todo-api",
   "version": "1.0.0",
   "main": "server/server.js",
+  "now": {
+    "name": "loopback-todo-api",
+    "alias": [
+      "loopback-todo-api"
+    ],
+    "env": {
+      "MONGODB_URL": "@mongodb-url",
+      "NODE_ENV": "production"
+    }
+  },
   "engines": {
     "node": ">=4"
   },
@@ -9,8 +19,11 @@
     "dev": "nodemon server/server.js --watch common --watch server",
     "lint": "eslint .",
     "start": "node .",
-    "test": "NODE_ENV=test mocha test/**/*.test.js",
-    "test:watch": "npm run test -- --watch"
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha test/**/*.test.js",
+    "test:watch": "npm run test -- --watch",
+    "now:deploy": "now",
+    "now:alias": "now alias",
+    "now": "npm run now:deploy && npm run now:alias"
   },
   "dependencies": {
     "compression": "^1.0.3",
